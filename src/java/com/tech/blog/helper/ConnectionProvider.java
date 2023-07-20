@@ -10,12 +10,11 @@ public class ConnectionProvider {
         try {
 
             if (con == null) {
-                //driver class load
-                Class.forName("com.mysql.jdbc.Driver");
+                // driver class load
+                Class.forName("com.mysql.cj.jdbc.Driver");
 
-                //create a connection..
-                con = DriverManager.
-                        getConnection("jdbc:mysql://localhost:3306/techblog", "root", "root");
+                // create a connection..
+                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/techblog", "root", "Akshay@123");
 
             }
 
